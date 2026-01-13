@@ -1,0 +1,11 @@
+[Unit]
+Description=Update audio device after raspotify is ready
+After=raspotify.service
+Requires=raspotify.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/update_audio.sh
+
+[Install]
+WantedBy=multi-user.target

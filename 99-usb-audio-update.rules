@@ -1,0 +1,1 @@
+ACTION=="add", SUBSYSTEM=="sound", KERNEL=="card*", RUN+="/usr/local/bin/update_audio.sh"
